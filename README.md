@@ -3,9 +3,9 @@
 <h2>Description</h2>
 Columbia University Biomedical Engineering Hackathon, where this year’s theme centered on “Patient Safety”, an event that brought together bright minds to innovate in the realms of Personalized Medicine, Underserved Demographics, and Data Science. Our focus? A groundbreaking approach to ANTI-SEPSIS, particularly in the critical post-surgical period.
 
-<br />
+<n />
 Our Solution: A state-of-the-art app powered by a data science model, utilizing machine learning to monitor patients’ post-operative conditions with remarkable accuracy. This tool is designed to identify early signs of sepsis risk, a condition that, according to recent studies, accounts for nearly 30% of post-surgical deaths. Symptoms often dismissed as normal post-operative reactions—difficulty breathing, fever, and other side effects—can, in fact, be harbingers of sepsis, placing patients at a risk comparable to that of major diseases like cancer and heart disease.
-
+<n />
 The Impact: Our model aims to revolutionize patient care by providing healthcare professionals with a powerful tool to predict and prevent sepsis, potentially saving countless lives by enabling timely and targeted interventions.
 <br />
 
