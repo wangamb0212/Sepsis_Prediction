@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        input[type=text], input[type=submit] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .results {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: center; /* Center the text within the results div */
+        }
+    </style>
+</head>
+<body>
+
+
+<h2>Sepsis Prediction</h2>
+
+<form action="/predict" method="post">
+    Hour: <input type="text" name="Hour"><br>
+    HR: <input type="text" name="HR"><br>
+    O2Sat: <input type="text" name="O2Sat"><br>
+    Temp: <input type="text" name="Temp"><br>
+    Resp: <input type="text" name="Resp"><br>
+    BaseExcess: <input type="text" name="BaseExcess"><br>
+    SaO2: <input type="text" name="SaO2"><br>
+    AST: <input type="text" name="AST"><br>
+    BUN: <input type="text" name="BUN"><br>
+    Alkalinephos: <input type="text" name="Alkalinephos"><br>
+    Calcium: <input type="text" name="Calcium"><br>
+    Chloride: <input type="text" name="Chloride"><br>
+    Bilirubin_direct: <input type="text" name="Bilirubin_direct"><br>
+    Glucose: <input type="text" name="Glucose"><br>
+    Lactate: <input type="text" name="Lactate"><br>
+    Magnesium: <input type="text" name="Magnesium"><br>
+    Potassium: <input type="text" name="Potassium"><br>
+    PTT: <input type="text" name="PTT"><br>
+    WBC: <input type="text" name="WBC"><br>
+    Fibrinogen: <input type="text" name="Fibrinogen"><br>
+    Platelets: <input type="text" name="Platelets"><br>
+    Age: <input type="text" name="Age"><br>
+    Unit1: <input type="text" name="Unit1"><br>
+    <input type="submit" value="Predict">
+</form>
+
+{% if prediction_text %}
+    <div>
+        <h3>Prediction Results:</h3>
+        <p>{{ prediction_text }}</p>
+    </div>
+{% endif %}
+
+</body>
+</html>
